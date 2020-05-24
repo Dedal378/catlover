@@ -1,0 +1,95 @@
+/* Mixins:
+   ========================================================================== */
+
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+// size to one line
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// placeholder helper
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+// mixin for fonts
+@mixin Playfair {
+  font-family: PlayfairDisplay, serif;
+  font-size: 1.625rem;
+  line-height: 0.69;
+  text-align: left;
+  color: $vantablack;
+}
+
+@mixin NotoSerif {
+  font-family: NotoSerif, serif;
+  font-size: 0.875rem;
+  line-height: 1.29;
+  text-align: center;
+  color: $mainFontColor;
+}
+
+@mixin NotoSans-Bold {
+  font-family: NotoSans, sans-serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: left;
+  color: $mainFontColor;
+}
+
+@mixin NotoSans {
+  font-family: NotoSans, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  text-align: left;
+  color: $mainFontColor;
+}
+
+
+/* Fonts Helpers:
+   Read more: https://github.com/vedees/webpack-template/blob/master/README.md#add-fonts
+   ========================================================================== */
+
+// Default: For modern format fonts
+// Files Required: .woff, .woffs
+
+@mixin font-face(
+  $font-family,
+  $file-path,
+  $weight: normal,
+  $style: normal,
+  $asset-pipeline: false
+) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+
+    src: url("#{$file-path}.woff") format("woff"),
+      url("#{$file-path}.woff2") format("woff2");
+  }
+}
+
