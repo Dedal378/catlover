@@ -1,4 +1,4 @@
-// import 'src/styles/_index.scss';
-import 'src/styles/index.css';
+import '../styles/index.css';
+// import '../styles/index.scss';
 
-console.log('catlover');
+console.log('catlover is a good lover');

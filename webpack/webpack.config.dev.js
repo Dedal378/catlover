@@ -35,19 +35,24 @@ module.exports = merge(common, {
         loader: 'babel-loader'
       },
       {
-        test: /\.s?css$/i,
+        test: /\.scss$/i,
+        exclude: /node_modules/,
         use: [
           'style-loader',
-          { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
-          { loader: 'postcss-loader', options: {
-              ident: 'postcss',
-              sourceMap: true,
-              config: { path: `postcss.config.js` }
-            }
-          },
+          { loader: 'css-loader', options: { modules: true, importLoaders: 1, sourceMap: true }},
+          { loader: 'postcss-loader', options: { ident: 'postcss', sourceMap: true }},
           { loader: 'sass-loader', options: { sourceMap: true } },
         ]
-      }
+      },
+      {
+        test: /\.css$/i,
+        exclude: /node_modules/,
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { modules: true, importLoaders: 1, sourceMap: true }},
+          { loader: 'postcss-loader', options: { ident: 'postcss', sourceMap: true }},
+        ]
+      },
     ]
   }
 });

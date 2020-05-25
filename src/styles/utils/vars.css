@@ -1,22 +1,23 @@
 :root {
   /*Font*/
-  --mainFont: 'Roboto', Helvetica, sans-serif;
+  --mainFont: Lato-Regular-Dark, 'Helvetica', sans-serif;
 
   /*Size*/
-  --mainFontColor: #000;
-  --mainFontSize: 14px;
-  --mainFontWeight: 400;
-  --mainLineHeight: 1.4;
+  --mainFontColor: var(--dark);
+  --mainFontSize: 16px;
 
-  --desktopWidth: 1280px;
+  --desktopWidth: 1172px;
   --smDesktopWidth: 1024px;
   --tableWidth: 768px;
   --smTableWidth: 640px;
   --phoneWidth: 480px;
   --smPhoneWidth: 320px;
 
+
   /*Main color*/
-  --default-color: var(--white);
+
+  /*Primary*/
+  --default-color: #ffffff;
   --primary-color: #444ce0;
   --success-color: #26de81;
   --danger-color: #fc5c65;
@@ -24,17 +25,18 @@
   --light-color: #999;
   --purple-color: #8854d0;
 
-  --white: #ffffff;
+  /*Constant color in this project*/
+  --white: var(--default-color);
+  --white-powder: #fffefd;
   --dark: #1a212f;
   --light-mustard: #fac663;
   --brownish-grey: #777777;
   --reddish-orange: #f05b1b;
-  --white-powder: #fffefd;
   --dusty-orange: #ff7236;
   --dark-blue: #151b28;
   --pale-orange: #ffaa50;
   --very-light-pink: #fffdfb;
   --orangeish: #ff913c;
-  --black: #141312;
-  --black-25: rgba(0, 0, 0, 0.25);
+  --black-dusty: #141312;
+  --black-shadow: rgba(0, 0, 0, 0.25);
 }

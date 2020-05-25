@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
-      {from: Path.resolve(__dirname, '../assets'), to: 'assets'}
+      {from: Path.resolve(__dirname, '../public'), to: 'public'}
     ]),
     // закомментировать блок, если используешь pug
     // new HtmlWebpackPlugin({

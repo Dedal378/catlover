@@ -28,18 +28,24 @@ module.exports = merge(common, {
         use: 'babel-loader'
       },
       {
-        test: /\.s?css/i,
+        test: /\.scss/i,
+        exclude: /node_modules/,
         use : [
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { importLoaders: 1 } },
-          { loader: 'postcss-loader', options: {
-              ident: 'postcss',
-              config: { path: `postcss.config.js` }
-            }
-          },
+          { loader: 'postcss-loader', options: { ident: 'postcss' }},
           { loader: 'sass-loader' },
         ]
-      }
+      },
+      {
+        test: /\.css/i,
+        exclude: /node_modules/,
+        use : [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          { loader: 'postcss-loader', options: { ident: 'postcss' }},
+        ]
+      },
     ]
   }
 });
