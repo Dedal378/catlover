@@ -1,4 +1,5 @@
 @import "utils/vars.css";
+@import "utils/fonts.css";
 
 *, *:before, *:after {
   margin: 0;

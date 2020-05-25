@@ -1,3 +1,4 @@
-import 'src/styles/_index.scss';
+// import 'src/styles/_index.scss';
+import 'src/styles/index.css';
 
-console.log('webpack starterkit');
+console.log('catlover');
