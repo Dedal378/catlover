@@ -1,11 +1,10 @@
 :root {
-  /*Font*/
-  --mainFont: Lato-Regular-Dark, 'Helvetica', sans-serif;
+  /* Font */
+  --mainFont: "Lato-Regular", sans-serif;
 
-  /*Size*/
+  /* Size */
   --mainFontColor: var(--dark);
   --mainFontSize: 16px;
-
   --desktopWidth: 1172px;
   --smDesktopWidth: 1024px;
   --tableWidth: 768px;
@@ -13,11 +12,10 @@
   --phoneWidth: 480px;
   --smPhoneWidth: 320px;
 
+  /* Main color */
 
-  /*Main color*/
-
-  /*Primary*/
-  --default-color: #ffffff;
+  /* Primary */
+  --default-color: #fff;
   --primary-color: #444ce0;
   --success-color: #26de81;
   --danger-color: #fc5c65;
@@ -25,12 +23,12 @@
   --light-color: #999;
   --purple-color: #8854d0;
 
-  /*Constant color in this project*/
+  /* Constant color in this project */
   --white: var(--default-color);
   --white-powder: #fffefd;
   --dark: #1a212f;
   --light-mustard: #fac663;
-  --brownish-grey: #777777;
+  --brownish-grey: #777;
   --reddish-orange: #f05b1b;
   --dusty-orange: #ff7236;
   --dark-blue: #151b28;
