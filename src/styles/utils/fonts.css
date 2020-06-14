@@ -2,9 +2,9 @@
   font-family: Lato;
   src:
     local("Lato-Regular"),
-    url(/public/fonts/Lato-Regular.woff2) format("woff2"),
-    url(/public/fonts/Lato-Regular.woff) format("woff"),
-    url(/public/fonts/Lato-Regular.ttf) format("truetype");
+    url(../../../public/fonts/Lato-Regular.woff2) format("woff2"),
+    url(../../../public/fonts/Lato-Regular.woff) format("woff"),
+    url(../../../public/fonts/Lato-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -14,9 +14,9 @@
   font-family: Lato;
   src:
     local("Lato-Medium"),
-    url(/public/fonts/Lato-Medium.woff2) format("woff2"),
-    url(/public/fonts/Lato-Medium.woff) format("woff"),
-    url(/public/fonts/Lato-Medium.ttf) format("truetype");
+    url(../../../public/fonts/Lato-Medium.woff2) format("woff2"),
+    url(../../../public/fonts/Lato-Medium.woff) format("woff"),
+    url(../../../public/fonts/Lato-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -26,9 +26,9 @@
   font-family: Lato;
   src:
     local("Lato-SemiBold"),
-    url(/public/fonts/Lato-SemiBold.woff2) format("woff2"),
-    url(/public/fonts/Lato-SemiBold.woff) format("woff"),
-    url(/public/fonts/Lato-SemiBold.ttf) format("truetype");
+    url(../../../public/fonts/Lato-SemiBold.woff2) format("woff2"),
+    url(../../../public/fonts/Lato-SemiBold.woff) format("woff"),
+    url(../../../public/fonts/Lato-SemiBold.ttf) format("truetype");
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -38,9 +38,9 @@
   font-family: Rubik;
   src:
     local("Rubik-Medium"),
-    url(/public/fonts/Rubik-Medium.woff2) format("woff2"),
-    url(/public/fonts/Rubik-Medium.woff) format("woff"),
-    url(/public/fonts/Rubik-Medium.ttf) format("truetype");
+    url(../../../public/fonts/Rubik-Medium.woff2) format("woff2"),
+    url(../../../public/fonts/Rubik-Medium.woff) format("woff"),
+    url(../../../public/fonts/Rubik-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -50,63 +50,70 @@
   font-family: Rubik;
   src:
     local("Rubik-Bold"),
-    url(/public/fonts/Rubik-Bold.woff2) format("woff2"),
-    url(/public/fonts/Rubik-Bold.woff) format("woff"),
-    url(/public/fonts/Rubik-Bold.ttf) format("truetype");
+    url(../../../public/fonts/Rubik-Bold.woff2) format("woff2"),
+    url(../../../public/fonts/Rubik-Bold.woff) format("woff"),
+    url(../../../public/fonts/Rubik-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
 }
 
-.Rubik-Bold {
+.rubik-bold {
   font-family: Rubik, sans-serif;
   font-size: 2.25rem;
   font-weight: bold;
   color: var(--dark-blue);
 }
 
-.Rubik-Medium {
+.rubik-medium {
   font-family: Rubik, sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--dark);
 }
 
-.Lato-Medium-18 {
+.lato-medium-18 {
   font-family: Lato, sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
   color: var(--dark);
 }
 
-.Lato-Semi-Bold-Dark {
-  font-family: Lato, sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--dark);
-}
-
-.Lato-Medium-16 {
+.lato-medium-16 {
   font-family: Lato, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: var(--dark);
 }
 
-.Lato-Semi-Bold-White {
+.lato-semi-bold-dark-16 {
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.lato-semi-bold-dark {
+  font-family: Lato, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.lato-semi-bold-white {
   font-family: Lato, sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--white-powder);
 }
 
-.Lato-Regular-Black {
+.lato-regular-black {
   font-family: Lato, sans-serif;
   font-size: 0.875rem;
   color: var(--black-dusty);
 }
 
-.Lato-Regular-Dark {
+.lato-regular-dark {
   font-family: Lato, sans-serif;
   font-size: 0.875rem;
   color: var(--dark);

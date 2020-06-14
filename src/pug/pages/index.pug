@@ -13,22 +13,185 @@ html(lang='en')
     meta(content='#ffffff', name='theme-color')
     title Котейка storage
   body
-    .wrapper
-      header
-        .content-wrapper Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, deserunt?
-        nav
-          ul
-            li
-              a(href='#') 1
-            li
-              a(href='#') 1
-            li
-              a(href='#') 1
-            li
-              a(href='#') 1
-            li
-              a(href='#') 1
-      main.content-wrapper
-        section
-
-      footer
+    #app
+      header.header.fixed
+        .header__container
+          .header__content
+            a(href="/")
+              img(src='./public/img/logo.png', alt="logo")
+            nav
+              ul.lato-semi-bold-dark-16
+                li
+                  a(href='#') Почему мы?
+                li
+                  a(href='#') Номера
+                li
+                  a(href='#') Отзывы
+                li
+                  a(href='#') Как нас найти
+      main.main
+        .main__container
+          section.main__header
+            h1.rubik-bold Наши номера
+            .filter-block
+              .filter-block__items
+                ul
+                  li
+                    img(src='/public/img/svg4.svg')
+                    a(href='#') По площади
+                  li
+                    img(src='/public/img/svg5.svg')
+                    a(href='#') По площади
+                  li
+                    img(src='/public/img/svg4.svg')
+                    a(href='#') По цене
+                  li
+                    img(src='/public/img/svg5.svg')
+                    a(href='#') По цене
+              .filter-block__close
+                img(src='/public/img/svg3.svg')
+          section.content
+            aside.content__aside
+              form.form-filter
+                .form-filter__header-price.lato-medium-16 Цена за сутки,
+                  span &#8381;
+                .input__block.input__price
+                  input.input__item.lato-regular-dark(type='text', name='min-price', value="от ")
+                  input.input__item.lato-regular-dark(type='text', name='max-price', value="до ")
+                .form-filter__header-check.lato-medium-16 Площадь
+                .input__block
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_1', id='checkbox-square_1')
+                  label(for='checkbox-square_1') 0,63 м2
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_2', id='checkbox-square_2')
+                  label(for='checkbox-square_2') 0,90 м2
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_3', id='checkbox-square_3')
+                  label(for='checkbox-square_3') 1,13 м2
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_4', id='checkbox-square_4')
+                  label(for='checkbox-square_4') 1,56 м2
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_5', id='checkbox-square_5')
+                  label(for='checkbox-square_5') 2,56 м2
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_6', id='checkbox-square_6')
+                  label(for='checkbox-square_6') 2,56 м2
+                .form-filter__header-check.lato-medium-16 Оснащение номера
+                .input__block
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_7', id='checkbox-square_7')
+                  label(for='checkbox-square_7') Пустой номер
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_8', id='checkbox-square_8')
+                  label(for='checkbox-square_8') Лежак
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_9', id='checkbox-square_9')
+                  label(for='checkbox-square_9') Когтеточка
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_10', id='checkbox-square_10')
+                  label(for='checkbox-square_10') Игровой комплекс
+                  input.input__item_checkbox(type='checkbox', name='checkbox-square_11', id='checkbox-square_11')
+                  label(for='checkbox-square_11') Домик
+                .button-block
+                  button.btn.btn-aside.btn__send.lato-semi-bold-dark Применить
+                  button.btn.btn-aside.btn__reset.lato-semi-bold-dark Сбросить фильтр
+            section.content__main
+              figure.card
+                img.card__img(src='./public/img/img1.jpg')
+                figcaption.card__block-text
+                  header.rubik-medium Эконом
+                  p Размеры (ШхГхВ) - 90х70х180 см
+                  p Площадь - 0,63 м2
+                  .block-item
+                    span Оснащение номера
+                    .img-block
+                      img(src='./public/img/svg8.svg')
+                  p.card__price Цена за сутки:
+                    span.lato-medium-18
+                      |  100₽
+                  button.btn.btn-card.lato-semi-bold-white
+                    span Забронировать
+                    img(src='./public/img/svg1.svg')
+              figure.card
+                img.card__img(src='./public/img/img2.jpg')
+                figcaption.card__block-text
+                  header.rubik-medium Эконом плюс
+                  p Размеры (ШхГхВ) - 90х100х180 см
+                  p Площадь - 0,90 м2
+                  .block-item
+                    span Оснащение номера
+                    .img-block
+                      img(src='./public/img/svg9.svg')
+                      img(src='./public/img/svg10.svg')
+                  p.card__price Цена за сутки:
+                    span.lato-medium-18
+                      |  200₽
+                  button.btn.btn-card.lato-semi-bold-white
+                    span Забронировать
+                    img(src='./public/img/svg1.svg')
+              figure.card
+                img.card__img(src='./public/img/img3.jpg')
+                figcaption.card__block-text
+                  header.rubik-medium Комфорт
+                  p Размеры (ШхГхВ) - 100х125х180 см
+                  p Площадь - 1,13 м2
+                  .block-item
+                    span Оснащение номера
+                    .img-block
+                      img(src='./public/img/svg9.svg')
+                      img(src='./public/img/svg10.svg')
+                      img(src='./public/img/svg7.svg')
+                  p.card__price Цена за сутки:
+                    span.lato-medium-18
+                      |  250₽
+                  button.btn.btn-card.lato-semi-bold-white
+                    span Забронировать
+                    img(src='./public/img/svg1.svg')
+              figure.card
+                img.card__img(src='./public/img/img4.jpg')
+                figcaption.card__block-text
+                  header.rubik-medium Сьют
+                  p Размеры (ШхГхВ) - 125х125х180 см
+                  p Площадь - 1,56 м2
+                  .block-item
+                    span Оснащение номера
+                    .img-block
+                      img(src='./public/img/svg9.svg')
+                      img(src='./public/img/svg10.svg')
+                      img(src='./public/img/svg7.svg')
+                  p.card__price Цена за сутки:
+                    span.lato-medium-18
+                      |  350₽
+                  button.btn.btn-card.lato-semi-bold-white
+                    span Забронировать
+                    img(src='./public/img/svg1.svg')
+              figure.card
+                img.card__img(src='./public/img/img5.jpg')
+                figcaption.card__block-text
+                  header.rubik-medium Люкс
+                  p Размеры (ШхГхВ) - 160х160х180 см
+                  p Площадь - 2,56 м2
+                  .block-item
+                    span Оснащение номера
+                    .img-block
+                      img(src='./public/img/svg9.svg')
+                      img(src='./public/img/svg10.svg')
+                      img(src='./public/img/svg7.svg')
+                      img(src='./public/img/svg11.svg')
+                  p.card__price Цена за сутки:
+                    span.lato-medium-18
+                      |  500₽
+                  button.btn.btn-card.lato-semi-bold-white
+                    span Забронировать
+                    img(src='./public/img/svg1.svg')
+              figure.card
+                img.card__img(src='./public/img/img6.jpg')
+                figcaption.card__block-text
+                  header.rubik-medium Супер-Люкс
+                  p Размеры (ШхГхВ) - 180х160х180 см
+                  p Площадь - 2,88 м2
+                  .block-item
+                    span Оснащение номера
+                    .img-block
+                      img(src='./public/img/svg9.svg')
+                      img(src='./public/img/svg10.svg')
+                      img(src='./public/img/svg7.svg')
+                      img(src='./public/img/svg11.svg')
+                  p.card__price Цена за сутки:
+                    span.lato-medium-18
+                      |  600₽
+                  button.btn.btn-card.lato-semi-bold-white
+                    span Забронировать
+                    img(src='./public/img/svg1.svg')
